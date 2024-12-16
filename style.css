@@ -1,0 +1,114 @@
+/* Reset de márgenes y paddings para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f9ff; /* Azul cielo claro */
+    color: #333; /* Color de texto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa de la ventana */
+}
+
+/* Estilo para el encabezado */
+#header {
+    text-align: center;
+    padding: 2% 0; /* Padding superior e inferior en porcentaje */
+    background-color: #87ceeb; /* Azul cielo */
+    color: white;
+}
+
+/* Estilo para las secciones */
+section {
+    margin: 2% auto; /* Margen superior e inferior en porcentaje */
+    padding: 5%; /* Padding en porcentaje */
+    border-radius: 8px;
+    width: 95%;
+    background-color: #e0f7fa; /* Verde agua */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Permite que las secciones crezcan y ocupen el espacio disponible */
+}
+
+/* Estilo para los encabezados dentro de las secciones */
+h2 {
+    margin-bottom: 15px;
+    color: #00695c; /* Verde claro */
+}
+
+/* Estilo para todos los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para todos los campos de entrada (input) */
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b2dfdb; /* Verde claro */
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Hace que el input ocupe todo el ancho disponible */
+}
+
+/* Cambio de color en el foco de los campos de entrada */
+input:focus {
+    border-color: #00796b; /* Verde oscuro */
+    outline: none;
+}
+
+/* Estilo para los elementos select */
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b2dfdb; /* Verde claro */
+    border-radius: 4px;
+    background-color: white;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Hace que el select ocupe todo el ancho disponible */
+}
+
+/* Cambio de color en el foco de los elementos select */
+select:focus {
+    border-color: #00796b; /* Verde oscuro */
+    outline: none;
+}
+
+/* Estilo para los párrafos dentro de los formularios */
+form p {
+    margin-bottom: 10px;
+    color: #666; /* Color de texto gris */
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px;
+    background-color: #4caf50; /* Verde claro */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+}
+
+/* Cambio de color en el hover del botón */
+button:hover {
+    background-color: #388e3c; /* Verde oscuro */
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 2% 0; /* Padding superior e inferior en porcentaje */
+    background-color: #87ceeb; /* Azul cielo */
+    color: white;
+    position: relative; /* Asegura que el footer esté correctamente posicionado */
+    bottom: 0; /* Mantiene el footer en la parte inferior */
+}
