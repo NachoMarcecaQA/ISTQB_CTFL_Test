@@ -15,15 +15,22 @@
     </section>
     
     <section id='signup'>
-        <h2>Sign Up</h2>
+        <h2>Sign up</h2>
         <form id='formsignup'>
-            <input type="text" id="welcomeName"  placeholder="Your Name">
-            <input type="text" id="welcomeSurname"  placeholder="Your Surname">
-            <button>Register</button>
+            <input type="text" id="welcomeName"  minlength="3" maxlength="30" placeholder="Your Name" required>
+            <input type="text" id="welcomeSurname" minlength="3" maxlength="30" placeholder="Your Surname" required>
+            <button onclick="displayGreeting()">Register</button>
         </form>
+        <div id="signupErrorMessage">
+            <p>Name and Surname must be between 3 and 30 characters long</p>
+        </div>
      </section>
-    
-     <section id='exam'>
+
+     <section id="welcomeMessage">
+     </section>
+     
+     
+    <section id='exam'>
         <h2>Exam</h2>
         
      </section>

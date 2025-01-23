@@ -102,6 +102,8 @@ button:hover {
     background-color: #388e3c; /* Verde oscuro */
 }
 
+
+
 /* Estilo para el pie de página */
 footer {
     text-align: center;
@@ -111,4 +113,17 @@ footer {
     color: white;
     position: relative; /* Asegura que el footer esté correctamente posicionado */
     bottom: 0; /* Mantiene el footer en la parte inferior */
+}
+
+#welcomeMessage {
+    display: none;
+    text-align: center;
+}
+
+#signupErrorMessage {
+    display: none;
+}
+
+#exam{
+    display: none;
 }
