@@ -1,118 +1,116 @@
-/* Reset de márgenes y paddings para todos los elementos */
+/* Reset margins and paddings for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo para el cuerpo del documento */
+/* Style for the document body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f9ff; /* Azul cielo claro */
-    color: #333; /* Color de texto */
+    background-color: #f0f9ff; /* Light sky blue */
+    color: #333; /* Text color */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura completa de la ventana */
+    min-height: 100vh; /* Ensures the body takes up at least the full height of the window */
 }
 
-/* Estilo para el encabezado */
+/* Style for the header */
 #header {
     text-align: center;
-    padding: 2% 0; /* Padding superior e inferior en porcentaje */
-    background-color: #87ceeb; /* Azul cielo */
+    padding: 2% 0; /* Top and bottom padding in percentage */
+    background-color: #87ceeb; /* Sky blue */
     color: white;
 }
 
-/* Estilo para las secciones */
+/* Style for sections */
 section {
-    margin: 2% auto; /* Margen superior e inferior en porcentaje */
-    padding: 5%; /* Padding en porcentaje */
+    margin: 2% auto; /* Top and bottom margins in percentage */
+    padding: 5%; /* Padding in percentage */
     border-radius: 8px;
     width: 95%;
-    background-color: #e0f7fa; /* Verde agua */
+    background-color: #e0f7fa; /* Aqua green */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    flex-grow: 1; /* Permite que las secciones crezcan y ocupen el espacio disponible */
+    flex-grow: 1; /* Allows sections to grow and occupy available space */
 }
 
-/* Estilo para los encabezados dentro de las secciones */
+/* Style for headers inside sections */
 h2 {
     margin-bottom: 15px;
-    color: #00695c; /* Verde claro */
+    color: #00695c; /* Light green */
 }
 
-/* Estilo para todos los formularios */
+/* Style for all forms */
 form {
     display: flex;
     flex-direction: column;
 }
 
-/* Estilo para todos los campos de entrada (input) */
+/* Style for all input fields */
 input {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #b2dfdb; /* Verde claro */
+    border: 1px solid #b2dfdb; /* Light green */
     border-radius: 4px;
     transition: border-color 0.3s ease;
-    width: 100%; /* Hace que el input ocupe todo el ancho disponible */
+    width: 100%; /* Makes the input take up the full available width */
 }
 
-/* Cambio de color en el foco de los campos de entrada */
+/* Change border color when input fields are focused */
 input:focus {
-    border-color: #00796b; /* Verde oscuro */
+    border-color: #00796b; /* Dark green */
     outline: none;
 }
 
-/* Estilo para los elementos select */
+/* Style for select elements */
 #question001 {
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #b2dfdb; /* Verde claro */
+    border: 1px solid #b2dfdb; /* Light green */
     border-radius: 4px;
     background-color: white;
     transition: border-color 0.3s ease;
-    width: 100%; /* Hace que el select ocupe todo el ancho disponible */
+    width: 100%; /* Makes the select element take up the full available width */
 }
 
-/* Cambio de color en el foco de los elementos select */
+/* Change border color when select elements are focused */
 #question001:focus {
-    border-color: #00796b; /* Verde oscuro */
+    border-color: #00796b; /* Dark green */
     outline: none;
 }
 
-/* Estilo para los párrafos dentro de los formularios */
+/* Style for paragraphs inside forms */
 form p {
     margin-bottom: 10px;
-    color: #666; /* Color de texto gris */
+    color: #666; /* Gray text color */
 }
 
-/* Estilo para los botones */
+/* Style for buttons */
 button {
     padding: 10px;
-    background-color: #4caf50; /* Verde claro */
+    background-color: #f0a582; /* Light green */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+    width: 100%; /* Makes the button take up the full available width */
 }
 
-/* Cambio de color en el hover del botón */
+/* Change button background color on hover */
 button:hover {
-    background-color: #388e3c; /* Verde oscuro */
+   background-color: #eb6222; /* Dark green */
 }
 
-
-
-/* Estilo para el pie de página */
+/* Style for the footer */
 footer {
     text-align: center;
     margin-top: 20px;
-    padding: 2% 0; /* Padding superior e inferior en porcentaje */
-    background-color: #87ceeb; /* Azul cielo */
+    padding: 2% 0; /* Top and bottom padding in percentage */
+    background-color: #87ceeb; /* Sky blue */
     color: white;
-    position: relative; /* Asegura que el footer esté correctamente posicionado */
-    bottom: 0; /* Mantiene el footer en la parte inferior */
+    position: relative; /* Ensures the footer is properly positioned */
+    bottom: 0; /* Keeps the footer at the bottom */
 }
 
 #welcomeMessage {
@@ -124,3 +122,38 @@ footer {
     display: none;
 }
 
+/* Style for question containers */
+.question-container {
+    margin-bottom: 20px;
+}
+
+/* Style for questions */
+.question {
+    font-weight: bold;
+}
+
+/* Style for buttons */
+button {
+    margin: 5px 0;
+    display: block;
+}
+
+/* Style for result section */
+.result {
+    margin-top: 20px;
+}
+
+/* Color for correct answers */
+.correct {
+    color: green;
+}
+
+/* Color for incorrect answers */
+.incorrect {
+    color: red;
+}
+
+/* Color for skipped questions */
+.skipped {
+    color: gray;
+}
