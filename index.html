@@ -18,8 +18,8 @@
         <h2 data-testid="signup_title">Sign up</h2>
         <form id='formsignup'>
             <input type="text" data-testid="signup_name" id="welcomeName"  minlength="3" maxlength="30" placeholder="Your Name" required>
-            <input type="text" data-testid="welcome_surname" id="welcomeSurname" minlength="3" maxlength="30" placeholder="Your Surname" required>
-            <button onclick="displayGreeting()">Register</button>
+            <input type="text" data-testid="signup_surname" id="welcomeSurname" minlength="3" maxlength="30" placeholder="Your Surname" required>
+            <button data-testid="singup_submit" onclick="displayGreeting()">Register</button>
         </form>
         <div id="signupErrorMessage">
             <p data-testid="singup_error_message" >Name and Surname must be between 3 and 30 characters long</p>
