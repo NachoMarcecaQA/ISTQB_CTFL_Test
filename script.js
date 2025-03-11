@@ -165,6 +165,7 @@ submitButton.addEventListener('click', () => {
     score = Math.max(0, score);
     const finalScore = document.createElement('div');
     finalScore.classList.add('result');
+    finalScore.setAttribute('data-testid', `final_score`);
     finalScore.innerHTML = `<h1><span class="${score >= 12 ? 'correct' : 'incorrect'}">Final Score: ${score}/${quizData.length * 2}</span></h1>`;
     resultsElement.appendChild(finalScore);
 });
