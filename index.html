@@ -14,12 +14,12 @@
         <p data-testid="subheader_name">Developed with HTML5, CSS3 and Javascript</p>
     </section>
     
-    <section id='signup'>
+    <section id='signup' data-testid="signup">
         <h2 data-testid="signup_title">Sign up</h2>
         <form id='formsignup'>
             <input type="text" data-testid="signup_name" id="welcomeName"  minlength="3" maxlength="30" placeholder="Name" required>
             <input type="text" data-testid="signup_surname" id="welcomeSurname" minlength="3" maxlength="30" placeholder="Surname" required>
-            <button data-testid="singup_submit" onclick="displayGreeting()">Register</button>
+            <button data-testid="signup_submit" onclick="displayGreeting()">Register</button>
         </form>
         <div id="signupErrorMessage">
             <p data-testid="singup_error_message" >Name and Surname must be between 3 and 30 characters long</p>
